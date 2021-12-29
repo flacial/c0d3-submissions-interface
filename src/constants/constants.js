@@ -1,0 +1,1 @@
+export const CHALLENGES_WEBSITE = "https://laicalf.freedomains.dev"
