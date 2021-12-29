@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Layout from "../components/layout";
 import { JS5, JS6 } from "../data/challenges";
 import "@fontsource/rubik";
@@ -74,17 +74,6 @@ const TabButtonsContainer = styled.div`
 display: flex;
 `;
 
-const fadeIn = keyframes`
-from {
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-to {
-  opactiy: 1;
-}
-`
-
 const TabPanelsContainer = styled.div`
 display: flex;
 flex-direction: column;
@@ -94,10 +83,13 @@ row-gap: 20px;
 overflow-y: auto;
 max-height: 76.5%;
 height: 100%;
-animation: ${fadeIn} 0.5s ease;
 
 &::-webkit-scrollbar {
   width: 0.4rem;
+}
+
+&::-webkit-scrollbar-track {
+  margin-bottom: 10px;
 }
 
 &::-webkit-scrollbar-thumb {
