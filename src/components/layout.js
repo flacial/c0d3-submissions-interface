@@ -13,8 +13,8 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
   html, body {
-    height: 100%;
-    background-color: hsl(195.5, 100%, 44.1%);
+    height: 100%; 
+    background: linear-gradient(44deg, hsl(195.5,100%,44.1%), hsl(188deg 98% 47%));
   }
   #gatsby-focus-wrapper, #___gatsby {
     height: 100%;
