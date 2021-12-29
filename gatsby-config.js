@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "flacial-submissions",
+    title: "c0d3-submissions-interface",
   },
+  pathPrefix: "/c0d3-submissions-interface",
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-react-helmet",
