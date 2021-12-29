@@ -3,6 +3,11 @@ import styled from "styled-components";
 import Layout from "../components/layout";
 import { JS5, JS6 } from "../data/challenges";
 import "@fontsource/rubik";
+import ExternalLinkIcon from "/public/static/external-link-icon.svg";
+import MoreIcon from "/public/static/moreIcon.svg";
+import discordIcon from "../images/discordIcon.png";
+import codeIcon from "../images/codeIcon.png";
+import repoIcon from "../images/repoIcon.png";
 
 const Main = styled.main`
   width: 100%;
@@ -166,6 +171,18 @@ const IndexPage = () => {
       </>
     );
   };
+        <AsideLink>
+          <img src={discordIcon} href="discord icon"></img>
+        </AsideLink>
+        <AsideLink>
+          <img src={codeIcon} href="code icon"></img>
+        </AsideLink>
+        <AsideLink>
+          <img src={repoIcon} href="repo icon"></img>
+        </AsideLink>
+        <ToggleAsideButtonC setRight={setRight} right={toRightValue}>
+          <MoreIcon />
+        </ToggleAsideButtonC>
 
   return (
     <Layout>
