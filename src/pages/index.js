@@ -2,13 +2,12 @@ import React, { useEffect, useState } from "react";
 import styled, { keyframes } from "styled-components";
 import Layout from "../components/layout";
 import { JS5, JS6 } from "../data/challenges";
-import "@fontsource/rubik";
+import { CHALLENGES_WEBSITE } from "../constants/constants";
 import ExternalLinkIcon from "/public/static/external-link-icon.svg";
 import MoreIcon from "/public/static/moreIcon.svg";
-import discordIcon from "../images/discordIcon.png";
-import codeIcon from "../images/codeIcon.png";
-import repoIcon from "../images/repoIcon.png";
-import { CHALLENGES_WEBSITE } from "../constants/constants";
+import DiscordIcon from "/public/static/discordIcon.svg";
+import RepoIcon from "/public/static/repoIcon.svg";
+import "@fontsource/rubik";
 
 const Main = styled.main`
   width: 100%;
@@ -209,6 +208,22 @@ background: hsl(195.5, 100%, 6.1%);
 display: grid;
 place-items: center;
 cursor: pointer;
+
+& svg {
+  width: 21px;
+  height: auto;
+}
+
+& a {
+  text-decoration: none;
+}
+
+& span {
+  color: #007EA7;
+  font-size: 10.5px;
+  font-weight: 600;
+  line-height: 0;
+}
 `
 
 const IndexPage = () => {
@@ -274,13 +289,19 @@ const IndexPage = () => {
     return (
       <AsideLinks toRight={`translateX(${right})`} isVisible={right === "72px"}>
         <AsideLink>
-          <img src={discordIcon} href="discord icon"></img>
+          <a rel="noreferrer" href="https://discord.gg/c0d3" target="_blank">
+            <DiscordIcon />
+          </a>
         </AsideLink>
         <AsideLink>
-          <img src={codeIcon} href="code icon"></img>
+          <a rel="noreferrer" href="https://www.c0d3.com" target="_blank">
+            <span>C0D3</span>
+          </a>
         </AsideLink>
         <AsideLink>
-          <img src={repoIcon} href="repo icon"></img>
+          <a rel="noreferrer" href="https://github.com/flacial/c0d3-submissions-interface" target="_blank">
+            <RepoIcon />
+          </a>
         </AsideLink>
         <ToggleAsideButtonC setRight={setRight} right={toRightValue}>
           <MoreIcon />
