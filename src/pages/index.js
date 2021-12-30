@@ -194,7 +194,7 @@ const IndexPage = () => {
             <ChallengeNameAndIcon>
               <h3>{name}</h3>
               <div>
-                <a target="_blank" href={`${CHALLENGES_WEBSITE}/${path}`}>
+                <a rel="noreferrer" target="_blank" href={`${CHALLENGES_WEBSITE}/${path}`}>
                   <ExternalLinkIcon />
                 </a>
               </div>
