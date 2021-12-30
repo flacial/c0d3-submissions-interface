@@ -9,15 +9,8 @@ import DiscordIcon from "/public/static/discordIcon.svg";
 import RepoIcon from "/public/static/repoIcon.svg";
 import "@fontsource/rubik";
 
-const Main = styled.main`
-  width: 100%;
-  height: 100%;
-  font-family: Rubik;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-`;
+import { Helmet } from "react-helmet";
+
 
 const Heading = styled.h1`
   background: linear-gradient(135deg, #a9e9ff, #ffffff);
@@ -316,7 +309,6 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <Main>
         <HeadingShadowWorkaround>
           <Heading primary>My Submissions</Heading>
           <Heading>My Submissions</Heading>
@@ -326,22 +318,7 @@ const IndexPage = () => {
             <Tabs defaultTab={0} />
           </Card>
           <AsideLinksC />
-          {/* <AsideLinks>
-            <AsideLink>
-              <img src={discordIcon} href="discord icon"></img>
-            </AsideLink>
-            <AsideLink>
-              <img src={codeIcon} href="code icon"></img>
-            </AsideLink>
-            <AsideLink>
-              <img src={repoIcon} href="repo icon"></img>
-            </AsideLink>
-            <ToggleAsideButton>
-              <MoreIcon />
-            </ToggleAsideButton>
-          </AsideLinks> */}
         </CardContainer>
-      </Main>
     </Layout>
   );
 };
