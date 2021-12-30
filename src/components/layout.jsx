@@ -1,5 +1,5 @@
 import React from "react";
-import { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   /*
@@ -38,12 +38,22 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const StyledLayout = styled.div`
+width: 100%;
+height: 100%;
+font-family: Rubik;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+`
+
 const Layout = ({ children }) => {
   return (
-    <>
+    <StyledLayout>
       <GlobalStyle theme="purple" />
       {children}
-    </>
+    </StyledLayout>
   );
 };
 
