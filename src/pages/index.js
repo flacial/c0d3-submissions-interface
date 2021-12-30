@@ -9,8 +9,6 @@ import DiscordIcon from "/public/static/discordIcon.svg";
 import RepoIcon from "/public/static/repoIcon.svg";
 import "@fontsource/rubik";
 
-import { Helmet } from "react-helmet";
-
 
 const Heading = styled.h1`
   background: linear-gradient(135deg, #a9e9ff, #ffffff);
