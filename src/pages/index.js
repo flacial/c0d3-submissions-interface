@@ -160,6 +160,57 @@ transform: ${({ toRight }) => toRight && toRight};
 transition: transform ${({ isVisible }) => isVisible ? "ease-out 0.4s" : "ease-in 0.2s"};
 `
 
+const ChallengeNameAndIcon = styled.div`
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+& div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+svg {
+  transition: filter 0.3s ease;
+}
+
+& div:hover svg {
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(138deg);
+}
+`
+
+const CardContainer = styled.div`
+position: relative;
+`
+
+const ToggleAsideButton = styled.button`
+width: 29px;
+height: 13px;
+background-color: hsl(204.8, 100%, 14.7%);
+box-shadow: inset 10px 0px 5px -13px;
+border: 0;
+border-radius: 0 4px 4px 0;
+position: absolute;
+right: -29px;
+top: 50%;
+cursor: pointer;
+transition: background-color 0.3s ease;
+
+&:hover {
+background-color: hsl(204.8, 100%, 16.7%);
+}
+`
+
+const AsideLink = styled.div`
+width: 36px;
+height: 35.58px;
+border-radius: 6px;
+background: hsl(195.5, 100%, 6.1%);
+display: grid;
+place-items: center;
+cursor: pointer;
+`
+
 const IndexPage = () => {
   const Separator = () => {
     return <Line />;
@@ -169,25 +220,6 @@ const IndexPage = () => {
     const [currentTab, setCurrentTab] = useState(defaultTab || 0);
 
     const Tab = ({ content, tabIndex }) => {
-      const ChallengeNameAndIcon = styled.div`
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      & div {
-        padding: 10px;
-        cursor: pointer;
-      }
-
-      svg {
-        transition: filter 0.3s ease;
-      }
-
-      & div:hover svg {
-        filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(138deg);
-      }
-      `
-
       const putContent = content.map(({ name, description, path }, i) => (
         <>
           <Challenge key={i}>
@@ -234,37 +266,6 @@ const IndexPage = () => {
       </>
     );
   };
-  const CardContainer = styled.div`
-  position: relative;
-  `
-
-  const ToggleAsideButton = styled.button`
-  width: 29px;
-  height: 13px;
-  background-color: hsl(204.8, 100%, 14.7%);
-  box-shadow: inset 10px 0px 5px -13px;
-  border: 0;
-  border-radius: 0 4px 4px 0;
-  position: absolute;
-  right: -29px;
-  top: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-  background-color: hsl(204.8, 100%, 16.7%);
-  }
-  `
-
-  const AsideLink = styled.div`
-  width: 36px;
-  height: 35.58px;
-  border-radius: 6px;
-  background: hsl(195.5, 100%, 6.1%);
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-  `
 
   const AsideLinksC = () => {
     const [right, setRight] = useState("0");
