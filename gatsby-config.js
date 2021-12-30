@@ -28,9 +28,18 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-styled-components`,
-      options: {
-        // Add any options here
-      },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `c0d3-submissions-interface`,
+        short_name: `c0d3-submissions`,
+        icon: "src/images/favicon-32x32.png",
+        background_color: "#fff",
+        theme_color: "#fff",
+        display: 'standalone',
+        icon: 'src/images/favicon-32x32.png',
+      },
+    }
   ],
 };
