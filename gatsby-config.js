@@ -5,10 +5,10 @@ module.exports = {
   },
   pathPrefix: "/c0d3-submissions-interface",
   plugins: [
-    "gatsby-plugin-styled-components",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-mdx",
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-mdx`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -27,9 +27,6 @@ module.exports = {
       __key: "pages",
     },
     {
-      resolve: `gatsby-plugin-styled-components`,
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `c0d3-submissions-interface`,
@@ -40,6 +37,6 @@ module.exports = {
         display: 'standalone',
         icon: 'src/images/favicons/favicon-32x32.png',
       },
-    }
+    },
   ],
 };
