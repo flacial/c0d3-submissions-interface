@@ -1,6 +1,6 @@
 import React from "react";
 import { CHALLENGES_WEBSITE } from "../constants/constants";
-import ExternalLinkIcon from "/public/static/external-link-icon.svg";
+import ExternalLinkIcon from "../images/external-link-icon.svg";
 import { Challenge, ChallengeNameAndIcon } from "./Challenge";
 import Line from "./Line";
 

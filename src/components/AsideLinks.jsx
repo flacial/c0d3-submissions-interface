@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import MoreIcon from "/public/static/moreIcon.svg";
-import DiscordIcon from "/public/static/discordIcon.svg";
-import RepoIcon from "/public/static/repoIcon.svg";
+import MoreIcon from "../images/moreIcon.svg";
+import DiscordIcon from "../images/discordIcon.svg";
+import RepoIcon from "../images/repoIcon.svg";
 import ToggleAsideButton from "./AsideToggleButton";
 import AsideLink from './AsideLink';
 
