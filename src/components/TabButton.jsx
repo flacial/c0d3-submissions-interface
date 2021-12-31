@@ -9,12 +9,12 @@ const StyledTabButton = styled.button`
   background-color: ${(props) => (props.focus ? "hsl(204.9, 100%, 17.5%)" : "hsl(205.3, 100%, 14.9%)")};
   border: 0;
   cursor: ${(props) => (props.focus ? "auto" : "pointer")};
-  transition: background-color 0.3s ease;
+  // transition: background-color 0.3s ease;
 
 & p {
   font-size: 36px;
   font-weight: 600;
-  transition: color 0.3s ease;
+  // transition: color 0.3s ease;
   ${({ focus }) => focus === true && `
   background: linear-gradient(135deg,#20d4b4,#0083E1);
     -webkit-background-clip: text;
