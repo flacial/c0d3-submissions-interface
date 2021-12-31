@@ -6,8 +6,8 @@ import Line from "./Line";
 
 const Tab = ({ content, tabindex, currentTab }) => {
     const putContent = content.map(({ name, description, path }, i) => (
-        <>
-            <Challenge key={i}>
+        <React.Fragment key={i}>
+            <Challenge>
                 <ChallengeNameAndIcon>
                     <h3>{name}</h3>
                     <div>
@@ -19,9 +19,9 @@ const Tab = ({ content, tabindex, currentTab }) => {
                 <p>{description}</p>
             </Challenge>
             {
-                i !== content.length - 1 && <Line vertical />
+                i !== content.length - 1 && <Line />
             }
-        </>
+        </React.Fragment>
     ));
 
     return currentTab === tabindex ? <>{putContent}</> : null;

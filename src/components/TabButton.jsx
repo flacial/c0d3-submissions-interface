@@ -2,8 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledTabButton = styled.button`
-  width: 192px;
-  height: 78px;
+  width: 100%;
+  height: 100%;
+  padding: 14px 0;
   border-radius: ${(props => (props.left === true ? "20px 0px 0px 0px" : props.right === true && "0px 20px 0px 0px"))};
   background-color: ${(props) => (props.focus ? "hsl(204.9, 100%, 17.5%)" : "hsl(205.3, 100%, 14.9%)")};
   border: 0;
@@ -31,17 +32,17 @@ const StyledTabButton = styled.button`
     }
   }
  `
-    }
+  }
 `;
 
 const TabButton = ({ children, setCurrentTab, focus, left, right, tabindex, currentTab }) => {
-    const handleTabClick = (tabindex) => currentTab !== tabindex && setCurrentTab(tabindex);
+  const handleTabClick = (tabindex) => currentTab !== tabindex && setCurrentTab(tabindex);
 
-    return (
-        <StyledTabButton right={right} left={left} focus={focus} onClick={() => handleTabClick(tabindex)}>
-            <p>{children}</p>
-        </StyledTabButton>
-    );
+  return (
+    <StyledTabButton right={right} left={left} focus={focus} onClick={() => handleTabClick(tabindex)}>
+      <p>{children}</p>
+    </StyledTabButton>
+  );
 };
 
 export default TabButton;

@@ -8,16 +8,12 @@ position: relative;
 padding: 10px 45px;
 row-gap: 20px;
 overflow-y: auto;
-max-height: 80%;
+max-height: 82%;
 height: 100%;
 animation: ${fadeIn} 0.5s ease;
 
 &::-webkit-scrollbar {
   width: 0.4rem;
-}
-
-&::-webkit-scrollbar-track {
-  margin-bottom: 10px;
 }
 
 &::-webkit-scrollbar-thumb {
