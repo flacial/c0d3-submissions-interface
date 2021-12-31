@@ -7,7 +7,7 @@ from {
 }
 
 to {
-  opactiy: 1;
+  opacity: 1;
 }
 `
 
