@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
@@ -50,11 +51,15 @@ padding: 20px;
 `
 
 const Layout = ({ children }) => {
-  return (
+  return (<>
+    <Helmet>
+      <title>C0D3 Submissions - Flacial</title>
+    </Helmet>
     <StyledLayout>
       <GlobalStyle theme="purple" />
       {children}
     </StyledLayout>
+  </>
   );
 };
 
