@@ -12,6 +12,14 @@ font-size: 48px;
 font-weight: 700;
 position: ${(props) => (props.primary ? "initial" : "absolute")};
 top: ${(props) => (props.primary ? "auto" : "0")};
+
+@media (max-width: 400px) {
+    font-size: 42px;
+}
+
+@media (max-width: 360px) {
+    font-size: 34px;
+}
 `;
 
 const HeadingShadowWorkaround = styled.div`
