@@ -8,8 +8,7 @@ import AsideLink from './AsideLink';
 
 const StyledAsideLinks = styled.div`
 width: 95px;
-height: 171px;
-background: #002c4b;
+background-color: #002c4b;
 box-shadow: 0px 0px 20px -2px ${({ isVisible }) => isVisible ? "rgba(15,69,89,0.47)" : "transparent"};
 position: absolute;
 bottom: 0;
@@ -19,19 +18,30 @@ display: flex;
 align-items: center;
 justify-content: center;
 padding-left: 23px;
+padding-block: 20px;
 row-gap: 10px;
 flex-direction: column;
 transform: ${({ toRight }) => toRight && toRight};
 
 transition: transform ${({ isVisible }) => isVisible ? "ease-out 0.4s" : "ease-in 0.2s"};
+
+@media (max-width: 600px) {
+    top: 100px;
+    left: -70px;
+    bottom: auto;
+    right: auto;
+    padding-left: 0;
+    z-index: 30;
+    width: 70px;
+}
 `
 
 const AsideLinks = () => {
     const [right, setRight] = useState("0");
-    const toRightValue = "72px";
+    const toRightValue = "70px";
 
     return (
-        <StyledAsideLinks toRight={`translateX(${right})`} isVisible={right === "72px"}>
+        <StyledAsideLinks toRight={`translateX(${right})`} isVisible={right !== "0"}>
             <AsideLink>
                 <a rel="noreferrer" href="https://discord.gg/c0d3" target="_blank">
                     <DiscordIcon />
