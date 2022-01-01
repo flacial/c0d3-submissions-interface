@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import fadeIn from "../keyframes/fadeIn";
+import fadeIn from "../styles/fadeIn";
 
 const TabPanelsContainer = styled.div`
 display: flex;
