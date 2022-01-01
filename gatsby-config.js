@@ -21,8 +21,8 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /images/
-        }
+          include: /images/,
+        },
       },
       __key: "pages",
     },
@@ -34,8 +34,8 @@ module.exports = {
         icon: "src/images/favicon-32x32.png",
         background_color: "#fff",
         theme_color: "#fff",
-        display: 'standalone',
-        icon: 'src/images/favicons/favicon-32x32.png',
+        display: "standalone",
+        icon: "src/images/favicons/favicon-32x32.png",
       },
     },
   ],
