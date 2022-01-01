@@ -5,7 +5,6 @@ import Card from "../components/Card";
 import CardContainer from "../components/CardContainer";
 import Tabs from "../components/Tabs";
 import AsideLinks from "../components/AsideLinks";
-import "@fontsource/rubik";
 
 const IndexPage = () => (
   <Layout>
