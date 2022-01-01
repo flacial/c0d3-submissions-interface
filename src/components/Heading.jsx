@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Heading = styled.h1`
-background: linear-gradient(135deg, #a9e9ff, #ffffff);
+background: linear-gradient(135deg,#b9edff,#fff);
 text-shadow: ${(props) =>
         props.primary === true ? "0px 2px 17px rgba(20,94,120,0.44)" : "none"};
 color: white;
@@ -13,12 +13,20 @@ font-weight: 700;
 position: ${(props) => (props.primary ? "initial" : "absolute")};
 top: ${(props) => (props.primary ? "auto" : "0")};
 
-@media (max-width: 400px) {
-    font-size: 42px;
+@media (max-width: 480px) {
+    font-size: 40px;
 }
 
-@media (max-width: 360px) {
-    font-size: 34px;
+@media (max-width: 400px) {
+    font-size: 36px;
+}
+
+@media (max-width: 370px) {
+    font-size: 32px;
+}
+
+@media (max-width: 330px) {
+    font-size: 28px;
 }
 `;
 
