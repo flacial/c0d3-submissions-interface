@@ -8,7 +8,7 @@ import AsideLinks from "../components/AsideLinks";
 
 const IndexPage = () => (
   <Layout>
-    <Heading>My Submissions</Heading>
+    <Heading>C0D3 Submissions</Heading>
     <CardContainer>
       <Card>
         <Tabs defaultTab={0} />
