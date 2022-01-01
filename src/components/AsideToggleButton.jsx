@@ -2,8 +2,9 @@ import React from 'react';
 import styled from "styled-components"
 
 const StyledToggleAsideButton = styled.button`
+display: flex;
+justify-content: center;
 width: 29px;
-height: 13px;
 background-color: hsl(204.8, 100%, 14.7%);
 box-shadow: inset 10px 0px 5px -13px;
 border: 0;
@@ -21,13 +22,13 @@ background-color: hsl(204.8, 100%, 16.7%);
 @media (max-width: 600px) {
     & svg {
         filter: invert(1);
-        width: 20px;
+        // width: 20px;
     }
 
-    background-color: hsl(188deg 98% 47%);
+    background-color: hsl(194.4, 83.9%, 51.2%);
 
     &:hover {
-        background-color: hsl(188deg 98% 49%);
+        background-color: hsl(194.4, 83.9%, 56.2%);
     }
 
     right: -29px;

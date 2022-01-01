@@ -8,12 +8,16 @@ import AsideLink from './AsideLink';
 
 const StyledAsideLinks = styled.div`
 width: 95px;
-background-color: #002c4b;
+background-color: #00233c;
 box-shadow: 0px 0px 20px -2px ${({ isVisible }) => isVisible ? "rgba(15,69,89,0.47)" : "transparent"};
 position: absolute;
 bottom: 0;
 right: 0;
-border-radius: 8px;
+border-top: 3px solid #135b72;
+
+// Workaround to hide the bottom right border when it's hidden
+border-radius: 0 8px ${({ isVisible }) => isVisible ? "8px" : "50px"} 0;
+
 display: flex;
 align-items: center;
 justify-content: center;
@@ -23,7 +27,7 @@ row-gap: 10px;
 flex-direction: column;
 transform: ${({ toRight }) => toRight && toRight};
 
-transition: transform ${({ isVisible }) => isVisible ? "ease-out 0.4s" : "ease-in 0.2s"};
+transition: transform ${({ isVisible }) => isVisible ? "ease-out 0.4s" : "ease-in 0.2s"}, border-radius ease 0.4s, box-shadow ease 0.4s;
 
 @media (max-width: 600px) {
     top: 100px;
@@ -33,6 +37,8 @@ transition: transform ${({ isVisible }) => isVisible ? "ease-out 0.4s" : "ease-i
     padding-left: 0;
     z-index: 30;
     width: 70px;
+    border-radius: 0 8px 8px 0;
+    border-top-color: #1ab9eb;
 }
 `
 
