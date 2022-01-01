@@ -4,6 +4,9 @@ export const Challenge = styled.div`
  h3 {
    color: #FFFFFF;
    font-weight: 500;
+  //  white-space: nowrap;
+  //  overflow: hidden;
+  //  text-overflow: ellipsis;
  }
 
  p {
