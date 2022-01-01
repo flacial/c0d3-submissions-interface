@@ -17,10 +17,10 @@ animation: ${fadeIn} 0.5s ease;
 }
 
 &::-webkit-scrollbar-thumb {
-  width: 7.64px;
-  height: 97.63px;
   border-radius: 4px;
-  background: #007ea7
+  background: #007ea7;
+  background-clip: padding-box;
+  border-bottom: 10px solid transparent;
 }
 `
 
