@@ -54,7 +54,7 @@ export const JS6 = [
         name: "GraphQL Intro",
         description:
             "A gentle introduction to GraphQL with TypeDefs, Resolvers, and Queries",
-        path: "js6/graphql-intro"
+        path: "graphql"
     },
     {
         name: "React Stars and Kanban",
