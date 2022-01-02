@@ -8,7 +8,7 @@ position: relative;
 padding: 10px 45px;
 row-gap: 20px;
 overflow-y: auto;
-max-height: 82%;
+max-height: 84.7%;
 height: 100%;
 animation: ${fadeIn} 0.5s ease;
 
@@ -20,7 +20,7 @@ animation: ${fadeIn} 0.5s ease;
   border-radius: 4px;
   background: #007ea7;
   background-clip: padding-box;
-  border-bottom: 10px solid transparent;
+  border-bottom: 15px solid transparent;
 }
 `
 
