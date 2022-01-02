@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://flacial.github.io/c0d3-submissions-interface",
     title: "c0d3-submissions-interface",
   },
   pathPrefix: "/c0d3-submissions-interface",
