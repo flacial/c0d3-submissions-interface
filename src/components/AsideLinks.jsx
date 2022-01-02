@@ -8,7 +8,7 @@ import AsideLink from './AsideLink';
 
 const StyledAsideLinks = styled.div`
 width: 95px;
-background-color: #00233c;
+background-color: rgb(0 35 60 / 47%);
 box-shadow: 0px 0px 20px -2px ${({ isVisible }) => isVisible ? "rgba(15,69,89,0.47)" : "transparent"};
 position: absolute;
 bottom: 0;
@@ -26,6 +26,7 @@ padding-block: 20px;
 row-gap: 10px;
 flex-direction: column;
 transform: ${({ toRight }) => toRight && toRight};
+backdrop-filter: blur(4px);
 
 transition: transform ${({ isVisible }) => isVisible ? "ease-out 0.4s" : "ease-in 0.2s"}, border-radius ease 0.4s, box-shadow ease 0.4s;
 
