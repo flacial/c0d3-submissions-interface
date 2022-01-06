@@ -59,7 +59,18 @@ export const JS6 = [
     {
         name: "React Stars and Kanban",
         description:
-            "An introduction to React. Refactor Stars and Kanban challenges to JSXReact.",
+            "An introduction to React. Refactor Stars and Kanban challenges to JSXReact",
         path: "js6/react-stars-and-kanban"
+    },
+    {
+        name: "Webpack + Pokemon Classes",
+        description: "Utilize Webpack to build Pokemon Classes fronted built with React",
+        path: "js6/webpack-and-pokemon-classes"
+    },
+    {
+        name: "React Native Selfie Queen",
+        description: "With JS5 Selfie Queen API as the backend, Selfie Queen fronted built with React Native",
+        path: "https://expo.dev/@flacial/selfie-queen",
+        external: true,
     },
 ]
