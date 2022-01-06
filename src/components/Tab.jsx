@@ -5,13 +5,13 @@ import { Challenge, ChallengeNameAndIcon } from "./Challenge";
 import Line from "./Line";
 
 const Tab = ({ content, tabindex, currentTab }) => {
-    const putContent = content.map(({ name, description, path }, i) => (
+    const putContent = content.map(({ name, description, path, external }, i) => (
         <React.Fragment key={i}>
             <Challenge>
                 <ChallengeNameAndIcon>
                     <h3>{name}</h3>
                     <div>
-                        <a rel="noreferrer" target="_blank" href={`${CHALLENGES_WEBSITE}/${path}`}>
+                        <a rel="noreferrer" target="_blank" href={`${external ? '' : CHALLENGES_WEBSITE + '/'}${path}`}>
                             <ExternalLinkIcon />
                         </a>
                     </div>
